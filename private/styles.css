@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 
+#F8F3F3 Snow
+#DDDBDB Gainsboro
+#312E2E Jet
+#4A4646 Dark Liver
+#C11A12 International Orange Engineering
+*/
+
+
+/* Actual CSS */
+body {
+    background: #fcfcfc;
+	height: 910px;
+}
+
+
+.navBar{
+    display: flex;
+	align-items: center;
+	gap: 80px;
+	margin: 15px 45px 15px 35px;
+
+}
+
+.navLinks{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 40px;
+	flex-basis: 50%;
+}
+
+.appTitle{
+    color: #C11A12;
+	font-size: 24px;
+	flex-basis: 50%;
+}
+
+.pageNavs{
+	position: relative;
+  	color: #000;
+  	text-decoration: none;
+}
+
+.pageNavs:hover {
+	color: #000;
+}
+
+.pageNavs::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.pageNavs:hover::before{
+	transform: scaleX(1);
+}
+
+hr {
+	border:none;
+	height: 20px;
+	  height: 50px;
+	  margin-top: 0;
+	  border-bottom: 1px solid #1f1209;
+	  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.3);
+	margin: -50px auto 10px; 
+  }
+
+.mainPage{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.userInfoSection{
+	display: flex;
+	background-color: #FFFFFF;
+	padding: 15px;
+	transform: scale(1.7);
+	flex-direction: column;
+	gap: 10px;
+	border-style: solid;
+	box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.10);
+}
+
+#userInfoForm{
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+#userInfoSubmit{
+	background-color: #C11A12;
+	color: #F8F3F3;
+	border: none;
+	border-radius: 10px;
+	height: 25px;
+}
+
+#calsDiv{
+	transform: scale(2.1);
+	height: 288px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+#newInfoInnerDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 20px;
+	margin-top: 5px;
+}
+
+#newInfoTopDiv{
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: center;
+}
+
+#dietNavs{
+	/*text-decoration: ;*/
+	color: black;
+}
+
+#dietNavs:hover{
+	color: red;
+}
